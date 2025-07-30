@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ekipi Ynë</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Team Hero Section -->
+    <section class="team-hero">
+      <div class="container">
+        <div class="team-hero-content">
+          <div class="team-hero-text">
+            <h1>Ekipi Ynë Profesional</h1>
+            <p>
+              Dentistët tanë janë të trajnuar në nivelin më të lartë dhe të
+              përkushtuar për të ofruar kujdesin më të mirë për buzëqeshjen
+              tuaj.
+            </p>
+          </div>
+          <div class="team-hero-image">
+            <img src="../images/team.jpg" alt="Ekipi Profesional Dental" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+      <div class="container">
+        <h2 class="section-title">Takoni Ekipin Tonë</h2>
+        <p class="section-subtitle">
+          Çdo anëtar i ekipit tonë sjell ekspertizë të specializuar dhe pasion
+          për dentistërinë moderne
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="team-filters">
+          <button class="filter-btn active" data-filter="all">Të Gjithë</button>
+          <button class="filter-btn" data-filter="general">
+            Të Përgjithshëm
+          </button>
+          <button class="filter-btn" data-filter="orthodontist">
+            Ortodontistë
+          </button>
+          <button class="filter-btn" data-filter="oral-surgeon">
+            Kirurgë Oral
+          </button>
+          <button class="filter-btn" data-filter="pediatric">Pediatrikë</button>
+        </div>
+
+        <!-- Team Grid -->
+        <div class="team-grid" id="teamGrid">
+          <!-- General Dentists -->
+          <div class="doctor-card" data-category="general">
+            <div class="doctor-image">
+              <img src="../images/AgimBeqiri.jpg" alt="Dr. Agim Beqiri" />
+            </div>
+            <div class="doctor-name">Dr. Agim Beqiri</div>
+            <div class="doctor-title">Dentist i Përgjithshëm</div>
+            <div class="doctor-description">
+              15 vjet përvojë në dentistërinë e përgjithshme. Specializim në
+              implantologji dhe rehabilitim oral. I përkushtuar për teknologjitë
+              moderne dentare.
+            </div>
+          </div>
+
+          <div class="doctor-card" data-category="general">
+            <div class="doctor-image">
+              <img src="../images/EliraHoxha.jpg" alt="Dr. Elira Hoxha" />
+            </div>
+            <div class="doctor-name">Dr. Elira Hoxha</div>
+            <div class="doctor-title">Dentist i Përgjithshëm</div>
+            <div class="doctor-description">
+              12 vjet përvojë në trajtimin estetik dhe restaurimin dental.
+              Eksperte në vënien e kurorëve dhe porcelaneve. Anëtare e AAD.
+            </div>
+          </div>
+
+          <div class="doctor-card" data-category="general">
+            <div class="doctor-image">
+              <img src="../images/ArbenKrasniqi.jpg" alt="Dr. Arben Krasniqi" />
+            </div>
+            <div class="doctor-name">Dr. Arben Krasniqi</div>
+            <div class="doctor-title">Dentist i Përgjithshëm</div>
+            <div class="doctor-description">
+              10 vjet përvojë në dentistërinë preventive dhe restauruese.
+              Specializim në endodonti dhe trajtimin e rrënjëve dentare.
+            </div>
+          </div>
+
+          <!-- Orthodontists -->
+          <div class="doctor-card" data-category="orthodontist">
+            <div class="doctor-image">
+              <img src="../images/LinditaGashi.png" alt="Dr. Lindita Gashi" />
+            </div>
+            <div class="doctor-name">Dr. Lindita Gashi</div>
+            <div class="doctor-title">Ortodontiste</div>
+            <div class="doctor-description">
+              8 vjet përvojë në ortodonti. Eksperte në Invisalign dhe aparatet e
+              padukshme. Trajnim i specializuar në European Board of
+              Orthodontics.
+            </div>
+          </div>
+
+          <div class="doctor-card" data-category="orthodontist">
+            <div class="doctor-image">
+              <img src="../images/BlerimZeneli.jpg" alt="Dr. Blerim Zeneli" />
+            </div>
+            <div class="doctor-name">Dr. Blerim Zeneli</div>
+            <div class="doctor-title">Ortodontist</div>
+            <div class="doctor-description">
+              11 vjet përvojë në ortodonti për të rriturit dhe fëmijët.
+              Specializim në aparatet metalike dhe qeramike. Anëtar i EOS.
+            </div>
+          </div>
+
+          <!-- Oral Surgeons -->
+          <div class="doctor-card" data-category="oral-surgeon">
+            <div class="doctor-image">
+              <img src="../images/FatmirBerisha.png" alt="Dr. Fatmir Berisha" />
+            </div>
+            <div class="doctor-name">Dr. Fatmir Berisha</div>
+            <div class="doctor-title">Kirurg Oral</div>
+            <div class="doctor-description">
+              14 vjet përvojë në kirurgjinë orale dhe maksilofaciale. Ekspert në
+              nxjerrjen e dhëmbëve të mençurisë dhe implanteve komplekse.
+            </div>
+          </div>
+
+          <div class="doctor-card" data-category="oral-surgeon">
+            <div class="doctor-image">
+              <img src="../images/MarselaDoda.jpg" alt="Dr. Marsela Doda" />
+            </div>
+            <div class="doctor-name">Dr. Marsela Doda</div>
+            <div class="doctor-title">Kirurge Orale</div>
+            <div class="doctor-description">
+              9 vjet përvojë në kirurgjinë orale dhe parodontologji. Eksperte në
+              trajtimin e sëmundjeve të mishrave dhe transplantimin e indeve.
+            </div>
+          </div>
+
+          <!-- Pediatric Dentists -->
+          <div class="doctor-card" data-category="pediatric">
+            <div class="doctor-image">
+              <img src="../images/AnisaRama.jpg" alt="Dr. Anisa Rama" />
+            </div>
+            <div class="doctor-name">Dr. Anisa Rama</div>
+            <div class="doctor-title">Dentiste Pediatrike</div>
+            <div class="doctor-description">
+              7 vjet përvojë në dentistërinë pediatrike. E specializuar në
+              trajtimin e fëmijëve dhe teknike sedative. Trajnim në AAPD.
+            </div>
+          </div>
+
+          <div class="doctor-card" data-category="pediatric">
+            <div class="doctor-image">
+              <img src="../images/EndritSulaj.png" alt="Dr. Endrit Sulaj" />
+            </div>
+            <div class="doctor-name">Dr. Endrit Sulaj</div>
+            <div class="doctor-title">Dentist Pediatrik</div>
+            <div class="doctor-description">
+              6 vjet përvojë në dentistërinë për fëmijë. Ekspert në ortodontinë
+              e hershme dhe trajtimin preventiv. Anëtar i EAPD.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section">
+      <div class="container">
+        <h2 class="section-title">Certifikime dhe Anëtarësime</h2>
+        <p class="section-subtitle">
+          Krenohemi me standardet e larta profesionale dhe certifikimet
+          ndërkombëtare
+        </p>
+
+        <div class="certifications-grid">
+          <div class="certification-item">
+            <div class="certification-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <div class="certification-name">Albanian Dental Association</div>
+            <div class="certification-level">Anëtarësi e Plotë</div>
+          </div>
+
+          <div class="certification-item">
+            <div class="certification-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="certification-name">FDI World Federation</div>
+            <div class="certification-level">Anëtarësim Ndërkombëtar</div>
+          </div>
+
+          <div class="certification-item">
+            <div class="certification-icon">
+              <i class="fas fa-smile"></i>
+            </div>
+            <div class="certification-name">Invisalign Certified</div>
+            <div class="certification-level">Platinum Provider</div>
+          </div>
+
+          <div class="certification-item">
+            <div class="certification-icon">
+              <i class="fas fa-tooth"></i>
+            </div>
+            <div class="certification-name">ITI International Team</div>
+            <div class="certification-level">Implantology Certification</div>
+          </div>
+
+          <div class="certification-item">
+            <div class="certification-icon">
+              <i class="fas fa-computer"></i>
+            </div>
+            <div class="certification-name">Digital Dentistry</div>
+            <div class="certification-level">CAD/CAM Specialist</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation CTA -->
+    <section class="consultation-cta">
+      <div class="container">
+        <h2>Gati për t'u Takuar me Ekipin Tonë?</h2>
+        <p>
+          Rezervoni një konsultim falas me specialistët tanë dhe zbuloni si mund
+          t'ju ndihmojnë për një buzëqeshje të përkryer
+        </p>
+        <a href="../contact.html" class="btn-consultation">
+          Rezervo një Konsultim
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Custom JS -->
+    <script src="../js/include-html.js"></script>
+    <script src="../js/team.js"></script>
+  </body>
+</html>

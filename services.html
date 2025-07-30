@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shërbimet Tona</title>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+      <div class="container">
+        <h1>Shërbimet Tona</h1>
+        <p>Kujdes dentar i plotë me teknologjinë më të avancuar</p>
+        <a href="contact.html" class="btn-hero"> Rezervo Tani </a>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section">
+      <div class="container">
+        <h2 class="section-title">Shërbimet Tona Profesionale</h2>
+        <p class="section-subtitle">
+          Ofrojmë një gamë të plotë shërbimesh dentare për të gjitha nevojat
+          tuaja
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="service-filters">
+          <button class="filter-btn active" data-filter="all">Të Gjitha</button>
+          <button class="filter-btn" data-filter="basic">Bazë</button>
+          <button class="filter-btn" data-filter="aesthetic">Estetike</button>
+          <button class="filter-btn" data-filter="advanced">
+            Të Avancuara
+          </button>
+          <button class="filter-btn" data-filter="pediatric">Për Fëmijë</button>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid" id="servicesGrid">
+          <!-- Basic Services -->
+          <div class="service-card" data-category="basic">
+            <div class="service-content">
+              <div class="service-title">Kontroll i Rregullt</div>
+              <div class="service-description">
+                Kontrolle të plota dentare për parandalimin dhe diagnostifikimin
+                e hershëm të problemeve
+              </div>
+              <ul class="service-features">
+                <li>Ekzaminimi i plotë i gojës</li>
+                <li>Pastrim profesional</li>
+                <li>Këshillim parandalues</li>
+                <li>Plan trajtimi personal</li>
+              </ul>
+            </div>
+            <div class="service-price">
+              <div class="price-amount">Nga 2,500 ALL</div>
+              <a href="#" class="btn-learn-more" onclick="openModal('kontroll')"
+                >Mëso më shumë</a
+              >
+            </div>
+          </div>
+
+          <div class="service-card" data-category="basic">
+            <div class="service-content">
+              <div class="service-title">Pastrim Profesional</div>
+              <div class="service-description">
+                Largimi i tartarit dhe pllakës për një buzëqeshje të pastër dhe
+                të shëndetshme
+              </div>
+              <ul class="service-features">
+                <li>Largimi i tartarit</li>
+                <li>Polishing i dhëmbëve</li>
+                <li>Fluoridizmi</li>
+                <li>Këshilla higjienike</li>
+              </ul>
+            </div>
+            <div class="service-price">
+              <div class="price-amount">Nga 3,000 ALL</div>
+              <a href="#" class="btn-learn-more" onclick="openModal('pastrim')"
+                >Mëso më shumë</a
+              >
+            </div>
+          </div>
+
+          <div class="service-card" data-category="basic">
+            <div class="service-content">
+              <div class="service-title">Mbushje Dentare</div>
+              <div class="service-description">
+                Trajtimi i kariesit me materiale moderne kompozite për rezultate
+                të qëndrueshme
+              </div>
+              <ul class="service-features">
+                <li>Largimi i kariesit</li>
+                <li>Mbushje kompozite</li>
+                <li>Restaurimi estetik</li>
+                <li>Garanci 2 vjeçare</li>
+              </ul>
+            </div>
+            <div class="service-price">
+              <div class="price-amount">Nga 4,500 ALL</div>
+              <a href="#" class="btn-learn-more" onclick="openModal('mbushje')"
+                >Mëso më shumë</a
+              >
+            </div>
+          </div>
+
+          <!-- Aesthetic Services -->
+          <div class="service-card" data-category="aesthetic">
+            <div class="service-content">
+              <div class="service-title">Zbardhim Dhëmbësh</div>
+              <div class="service-description">
+                Zbardhim profesional për një buzëqeshje më të ndritshme dhe
+                tërheqëse
+              </div>
+              <ul class="service-features">
+                <li>Zbardhim me LED</li>
+                <li>Rezultate të menjëhershme</li>
+                <li>Zbardhim deri në 8 nuanca</li>
+                <li>Kit për shtëpi përfshirë</li>
+              </ul>
+            </div>
+            <div class="service-price">
+              <div class="price-amount">Nga 15,000 ALL</div>
+              <a href="#" class="btn-learn-more" onclick="openModal('zbardhim')"
+                >Mëso më shumë</a
+              >
+            </div>
+          </div>
+
+          <div class="service-card" data-category="aesthetic">
+            <div class="service-content">
+              <div class="service-title">Veneers Porcelani</div>
+              <div class="service-description">
+                Fasada të holla porcelani për një buzëqeshje të përkryer dhe
+                natyrale
+              </div>
+              <ul class="service-features">
+                <li>Porcelan cilësor</li>
+                <li>Dizajn i personalizuar</li>
+                <li>Rezultat natyral</li>
+                <li>Qëndrueshmëri afatgjatë</li>
+              </ul>
+            </div>
+            <div class="service-price">
+              <div class="price-amount">Nga 45,000 ALL</div>
+              <a href="#" class="btn-learn-more" onclick="openModal('veneers')"
+                >Mëso më shumë</a
+              >
+            </div>
+          </div>
+
+          <!-- Advanced Services -->
+          <div class="service-card" data-category="advanced">
+            <div class="service-content">
+              <div class="service-title">Implante Dentare</div>
+              <div class="service-description">
+                Zëvendësim i dhëmbëve të humbur me implante titanium cilësor
+              </div>
+              <ul class="service-features">
+                <li>Implante titanium</li>
+                <li>Kirurgji e guiduar</li>
+                <li>Kurora porcelani</li>
+                <li>Garanci 10 vjeçare</li>
+              </ul>
+            </div>
+            <div class="service-price">
+              <div class="price-amount">Nga 80,000 ALL</div>
+              <a href="#" class="btn-learn-more" onclick="openModal('implante')"
+                >Mëso më shumë</a
+              >
+            </div>
+          </div>
+
+          <div class="service-card" data-category="advanced">
+            <div class="service-content">
+              <div class="service-title">Ortodonti Invisalign</div>
+              <div class="service-description">
+                Rreshtim i dhëmbëve me aparate të padukshme dhe të hequshme
+              </div>
+              <ul class="service-features">
+                <li>Aparate të padukshme</li>
+                <li>Planifikim 3D</li>
+                <li>Kontrolle të rregullta</li>
+                <li>Rezultate të parashikueshme</li>
+              </ul>
+            </div>
+            <div class="service-price">
+              <div class="price-amount">Nga 180,000 ALL</div>
+              <a
+                href="#"
+                class="btn-learn-more"
+                onclick="openModal('invisalign')"
+                >Mëso më shumë</a
+              >
+            </div>
+          </div>
+
+          <!-- Pediatric Services -->
+          <div class="service-card" data-category="pediatric">
+            <div class="service-content">
+              <div class="service-title">Dentistëri për Fëmijë</div>
+              <div class="service-description">
+                Kujdes i specializuar dentar për fëmijët me qasje të butë dhe
+                miqësore
+              </div>
+              <ul class="service-features">
+                <li>Kontroll parandalues</li>
+                <li>Fluoridizim</li>
+                <li>Mbushje të ngjyrosura</li>
+                <li>Edukimi për higjienën</li>
+              </ul>
+            </div>
+            <div class="service-price">
+              <div class="price-amount">Nga 2,000 ALL</div>
+              <a href="#" class="btn-learn-more" onclick="openModal('femije')"
+                >Mëso më shumë</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology-section">
+      <div class="container">
+        <h2 class="section-title">Teknologjia Jonë</h2>
+        <p class="section-subtitle">
+          Përdorim teknologjinë më të avancuar për rezultate të shkëlqyera
+        </p>
+
+        <div class="technology-grid">
+          <div class="tech-card">
+            <div class="tech-image">
+              <i class="fas fa-x-ray"></i>
+            </div>
+            <div class="tech-title">Radiografia 3D</div>
+            <div class="tech-description">
+              Diagnostifikim i saktë me rrezatim minimal për planifikim të
+              përkryer të trajtimit
+            </div>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-image">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <div class="tech-title">CAD/CAM</div>
+            <div class="tech-description">
+              Kurora dhe mbushje në një vizitë me teknologji kompjuterike të
+              avancuara
+            </div>
+          </div>
+
+          <div class="tech-card">
+            <div class="tech-image">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <div class="tech-title">Laser Dental</div>
+            <div class="tech-description">
+              Trajtim pa dhimbje dhe më preciz për gingiva dhe inde të buta
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultation CTA -->
+    <section class="consultation-cta">
+      <div class="container">
+        <h2>Gati për të Filluar?</h2>
+        <p>
+          Rezervoni një konsultim falas dhe zbuloni me çfarë mund t'ju ndihmojmë
+        </p>
+        <a href="contact.html" class="btn-consultation"> Rezervo Tani </a>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="serviceModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalContent">
+          <!-- modal content -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="../js/include-html.js"></script>
+    <script src="js/services.js"></script>
+  </body>
+</html>
