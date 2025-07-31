@@ -101,7 +101,7 @@ a {
   backdrop-filter: blur(10px);
   box-shadow: var(--shadow-light);
   transition: var(--transition);
-  padding: 1rem 0;
+  padding: 0.6rem 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -122,11 +122,11 @@ a {
   position: relative;
 }
 
-.navbar-brand {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: var(--primary-color) !important;
-  text-decoration: none;
+.navbar-brand img {
+  max-height: 60px; 
+  height: auto;
+  width: auto;
+  display: block;
 }
 
 .navbar-brand:hover {
@@ -1002,6 +1002,14 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
   margin-bottom: 2rem;
+}
+
+.footer-content img{
+   max-height: 70px; 
+  height: auto;
+  width: auto;
+  display: block;
+
 }
 
 .footer-section h5 {
