@@ -14,12 +14,134 @@ filterBtns.forEach((btn) => {
     serviceCards.forEach((card) => {
       if (filter === "all" || card.getAttribute("data-category") === filter) {
         card.style.display = "grid";
+        // Add fade in animation
+        card.style.opacity = "0";
+        card.style.transform = "translateY(20px)";
+        setTimeout(() => {
+          card.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+          card.style.opacity = "1";
+          card.style.transform = "translateY(0)";
+        }, 100);
       } else {
-        card.style.display = "none";
+        card.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+        card.style.opacity = "0";
+        card.style.transform = "translateY(-20px)";
+        setTimeout(() => {
+          card.style.display = "none";
+        }, 300);
       }
     });
   });
 });
+
+// Smooth scroll functionality for hero button
+document.addEventListener('DOMContentLoaded', function() {
+  const heroBtn = document.querySelector('.btn-hero');
+  const servicesSection = document.querySelector('.services-section');
+  
+  if (heroBtn && servicesSection) {
+    heroBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      // Calculate offset to account for fixed header if you have one
+      const headerHeight = 80; // Adjust this based on your header height
+      const targetPosition = servicesSection.offsetTop - headerHeight;
+      
+      // Smooth scroll to services section
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+      
+      // Add a subtle bounce effect to the services section
+      setTimeout(() => {
+        servicesSection.style.transform = 'scale(1.02)';
+        setTimeout(() => {
+          servicesSection.style.transition = 'transform 0.3s ease';
+          servicesSection.style.transform = 'scale(1)';
+        }, 150);
+      }, 500);
+    });
+  }
+});
+
+// Alternative method using intersection observer for more advanced scroll detection
+function initScrollToServices() {
+  const heroButtons = document.querySelectorAll('a[href="#services"], .btn-hero');
+  
+  heroButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const servicesSection = document.querySelector('.services-section') || 
+                             document.querySelector('#services') ||
+                             document.querySelector('[id*="service"]');
+      
+      if (servicesSection) {
+        // Get the position of the services section
+        const rect = servicesSection.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const targetPosition = rect.top + scrollTop - 100; // 100px offset from top
+        
+        // Smooth scroll animation
+        smoothScrollTo(targetPosition, 1000); // 1000ms duration
+        
+        // Highlight the services section briefly
+        setTimeout(() => {
+          highlightSection(servicesSection);
+        }, 800);
+      }
+    });
+  });
+}
+
+// Custom smooth scroll function with easing
+function smoothScrollTo(targetPosition, duration) {
+  const startPosition = window.pageYOffset;
+  const distance = targetPosition - startPosition;
+  let startTime = null;
+  
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime;
+    const timeElapsed = currentTime - startTime;
+    const run = ease(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+  
+  // Easing function for smooth animation
+  function ease(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return c / 2 * t * t + b;
+    t--;
+    return -c / 2 * (t * (t - 2) - 1) + b;
+  }
+  
+  requestAnimationFrame(animation);
+}
+
+// Highlight section function
+function highlightSection(section) {
+  // Add a subtle glow effect
+  const originalBoxShadow = section.style.boxShadow;
+  const originalTransition = section.style.transition;
+  
+  section.style.transition = 'box-shadow 0.3s ease, transform 0.3s ease';
+  section.style.boxShadow = '0 0 30px rgba(49, 130, 206, 0.3)';
+  section.style.transform = 'translateY(-5px)';
+  
+  setTimeout(() => {
+    section.style.boxShadow = originalBoxShadow;
+    section.style.transform = 'translateY(0)';
+    
+    setTimeout(() => {
+      section.style.transition = originalTransition;
+    }, 300);
+  }, 1000);
+}
+
+// Initialize scroll functionality
+document.addEventListener('DOMContentLoaded', initScrollToServices);
 
 // Modal functionality
 const modal = document.getElementById("serviceModal");
@@ -145,27 +267,104 @@ function openModal(serviceType) {
   const service = modalData[serviceType];
   if (service) {
     modalContent.innerHTML = `
-                    <h3>${service.title}</h3>
-                    <p>${service.description}</p>
-                    <h4 style="color: #1a365d; margin: 20px 0 15px 0;">Çfarë përfshin:</h4>
-                    <ul>
-                        ${service.details
-                          .map((detail) => `<li>${detail}</li>`)
-                          .join("")}
-                    </ul>
-                `;
+      <h3>${service.title}</h3>
+      <p>${service.description}</p>
+      <h4 style="color: #1a365d; margin: 20px 0 15px 0; font-weight: 600;">Çfarë përfshin:</h4>
+      <ul>
+        ${service.details
+          .map((detail) => `<li>${detail}</li>`)
+          .join("")}
+      </ul>
+      <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #e2e8f0;">
+        <a href="contact.html" class="btn-consultation" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-size: 1rem;">
+          Rezervo Konsultim <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    `;
     modal.style.display = "block";
+    
+    // Add entrance animation
+    setTimeout(() => {
+      modal.style.opacity = "1";
+    }, 10);
   }
 }
 
-// Close modal when clicking the X
-span.onclick = function () {
-  modal.style.display = "none";
-};
+// Enhanced modal close functionality
+if (span) {
+  span.onclick = function () {
+    closeModal();
+  };
+}
+
+// Close modal function with animation
+function closeModal() {
+  modal.style.opacity = "0";
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 200);
+}
 
 // Close modal when clicking outside
 window.onclick = function (event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    closeModal();
   }
 };
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape' && modal.style.display === 'block') {
+    closeModal();
+  }
+});
+
+// Add loading animation for service cards
+function animateServiceCards() {
+  const cards = document.querySelectorAll('.service-card');
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  cards.forEach((card, index) => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+    observer.observe(card);
+  });
+}
+
+// Initialize animations when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Add slight delay to ensure CSS is loaded
+  setTimeout(animateServiceCards, 100);
+});
+
+// Add pulse animation to filter buttons when hovering over service cards
+serviceCards.forEach(card => {
+  card.addEventListener('mouseenter', function() {
+    const category = this.getAttribute('data-category');
+    const relatedButton = document.querySelector(`[data-filter="${category}"]`);
+    
+    if (relatedButton && !relatedButton.classList.contains('active')) {
+      relatedButton.style.transform = 'scale(1.05)';
+      relatedButton.style.boxShadow = '0 5px 15px rgba(49, 130, 206, 0.2)';
+    }
+  });
+  
+  card.addEventListener('mouseleave', function() {
+    const category = this.getAttribute('data-category');
+    const relatedButton = document.querySelector(`[data-filter="${category}"]`);
+    
+    if (relatedButton && !relatedButton.classList.contains('active')) {
+      relatedButton.style.transform = 'scale(1)';
+      relatedButton.style.boxShadow = 'none';
+    }
+  });
+});

@@ -1,424 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>DentaCare</title>
-  <link rel="icon" type="image/png" href="images/title_logo.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DentaCare</title>
+    <link rel="icon" type="image/png" href="images/title_logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-  <!-- Navbar -->
-<div id="nav-placeholder"></div>
+  <body>
+    <!-- Navbar -->
+    <div id="nav-placeholder"></div>
 
-<!-- Hero Section -->
- <section class="hero-section" id="home">
-        <!-- YouTube Background Video -->
-        <div class="youtube-background">
-            <iframe 
-                src="https://www.youtube.com/embed/_yZdyuP__DU?autoplay=1&mute=1&loop=1&playlist=_yZdyuP__DU&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1"
-                allow="autoplay; encrypted-media"
-                allowfullscreen>
-            </iframe>
-        </div>
-        <div class="hero-video-overlay"></div>
-        
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">Buzëqeshja Juaj, Kujdesi Ynë</h1>
-                    <p class="hero-subtitle">Klinika jonë dentare ofron kujdes profesional për të gjithë familjen tuaj me teknologji moderne dhe staf të specializuar.</p>
-                    <div class="hero-buttons">
-                        <a href="#contact" class="btn-hero primary">Rezervo Tani</a>
-                        <a href="#services" class="btn-hero secondary">Shërbimet</a>
-                    </div>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <!-- YouTube Background Video -->
+      <div class="youtube-background">
+        <iframe
+          src="https://www.youtube.com/embed/_yZdyuP__DU?autoplay=1&mute=1&loop=1&playlist=_yZdyuP__DU&controls=0&showinfo=0&rel=0&iv_load_policy=3&modestbranding=1&playsinline=1"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+      <div class="hero-video-overlay"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Buzëqeshja Juaj, Kujdesi Ynë</h1>
+            <p class="hero-subtitle">
+              Klinika jonë dentare ofron kujdes profesional për të gjithë
+              familjen tuaj me teknologji moderne dhe staf të specializuar.
+            </p>
+            <div class="hero-buttons">
+              <a href="#contact" class="btn-hero primary">Rezervo Tani</a>
+              <a href="#services" class="btn-hero secondary">Shërbimet</a>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
-<!-- Services Section -->
-<section class="services-section" id="services">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">Shërbimet Tona</h2>
-      <p class="section-subtitle">Kujdes dentar i plotë me teknologjinë më të avancuar për të gjithë familjen</p>
-    </div>
-
-    <div class="services-preview">
-      <!-- Main Service Categories -->
-      <div class="service-category" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="category-title">Higjienë Dentare</h3>
-        <p class="category-description">Pastrim profesional, kontroll i rregullt dhe mbushje dentare</p>
-        <div class="category-highlight">
-          <span class="price-from">Nga 2,500 ALL</span>
-          <span class="service-count">3+ Shërbime</span>
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Shërbimet Tona</h2>
+          <p class="section-subtitle">
+            Kujdes dentar i plotë me teknologjinë më të avancuar për të gjithë
+            familjen
+          </p>
         </div>
-      </div>
 
-      <div class="service-category featured" data-aos="fade-up" data-aos-delay="200">
-        <div class="popular-badge">Më Popullor</div>
-        <h3 class="category-title">Trajtim Estetik</h3>
-        <p class="category-description">Zbardhim dhëmbësh, veneers porcelani dhe buzëqeshje perfekte</p>
-        <div class="category-highlight">
-          <span class="price-from">Nga 15,000 ALL</span>
-          <span class="service-count">2+ Shërbime</span>
-        </div>
-      </div>
-
-      <div class="service-category" data-aos="fade-up" data-aos-delay="300">
-        <h3 class="category-title">Teknologji e Avancuar</h3>
-        <p class="category-description">Implante dentare, Invisalign dhe trajtim për fëmijë</p>
-        <div class="category-highlight">
-          <span class="price-from">Nga 80,000 ALL</span>
-          <span class="service-count">3+ Shërbime</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- CTA -->
-    <div class="services-cta" data-aos="fade-up" data-aos-delay="600">
-      <div class="cta-content" >
-        <h3>Zbuloni të gjitha shërbimet tona</h3>
-      </div>
-      <div class="cta-actions">
-        <a href="services.html" class="btn-explore">
-          <span>Eksploro Shërbimet</span>
-          <i class="fas fa-arrow-right"></i>
-        </a>
-        <a href="contact.html" class="btn-contact">
-          <i class="fas fa-phone"></i>
-          <span>Rezervo Tani</span>
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- About Section -->
-  <section class="about-preview-section" id="about-preview">
-    <div class="container"><h2 class="about-preview-title">Buzëqeshja Juaj, Vizioni Ynë</h2>
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <div class="about-preview-content">
-            
-            <p class="about-preview-text">
-              "Çdo buzëqeshje e shëndetshme është një histori suksesi – dhe ne jemi këtu për t'i dhënë jetë asaj."
+        <div class="services-preview">
+          <!-- Main Service Categories -->
+          <div class="service-category" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="category-title">Higjienë Dentare</h3>
+            <p class="category-description">
+              Pastrim profesional, kontroll i rregullt dhe mbushje dentare
             </p>
-            <p class="about-preview-description">
-              DentaCare nuk është vetëm një klinikë – është një partner i besueshëm në rrugën drejt shëndetit oral afatgjatë dhe mirëqenies personale. Ne kombinojmë teknologjinë më të avancuar me kujdesin human dhe profesional.
+            <div class="category-highlight">
+              <span class="price-from">Nga 2,500 ALL</span>
+              <span class="service-count">3+ Shërbime</span>
+            </div>
+          </div>
+
+          <div
+            class="service-category featured"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="popular-badge">Më Popullor</div>
+            <h3 class="category-title">Trajtim Estetik</h3>
+            <p class="category-description">
+              Zbardhim dhëmbësh, veneers porcelani dhe buzëqeshje perfekte
             </p>
-            
-            <div class="about-features">
-              <div class="about-feature">
-                <div class="feature-icon">
-                  <i class="fas fa-user-md"></i>
-                </div>
-                <div class="feature-content">
-                  <h4>Kujdes i Personalizuar</h4>
-                  <p>Çdo pacient është unik – çdo trajtim fillon me dëgjim dhe kuptim</p>
-                </div>
-              </div>
-              
-              <div class="about-feature">
-                <div class="feature-icon">
-                  <i class="fas fa-cogs"></i>
-                </div>
-                <div class="feature-content">
-                  <h4>Teknologji Moderne</h4>
-                  <p>Pajisjet më të avancuara për diagnostikim dhe trajtime</p>
-                </div>
-              </div>
-            </div>
-            
-            <div class="about-actions">
-              <a href="about.html" class="btn-about-main">Lexo Më Shumë</a>
+            <div class="category-highlight">
+              <span class="price-from">Nga 15,000 ALL</span>
+              <span class="service-count">2+ Shërbime</span>
             </div>
           </div>
-        </div>
-        
-        <div class="col-lg-6">
-          <div class="about-preview-image">
-            <div class="image-wrapper">
-              <div class="image-placeholder">
-                <img src="images/about.jpg" alt="DentaCare Team" />
-              </div>
-              <div class="floating-card">
-                <div class="card-icon">
-                  <i class="fas fa-heart"></i>
-                </div>
-                <div class="card-content">
-                  <h5>100% Transparencë</h5>
-                  <p>Komunikim i qartë në çdo hap</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- Before & After Gallery Section -->
-<section class="gallery-section" id="gallery">
-  <div class="container">
-    <div class="section-header">
-      <h2 class="section-title">Para & Pas Trajtimit</h2>
-      <p class="section-subtitle">Shikoni transformimet e shkëlqyera të pacientëve tanë</p>
-    </div>
-    
-    <div class="gallery-grid">
-      <!-- Gallery Item 1 - Whitening -->
-      <div class="gallery-item" data-category="whitening">
-        <div class="gallery-card">
-          <div class="before-after-container">
-            <div class="before-image">
-              <img src="images/before_whitening.jpg" alt="Para zbardhimit" class="gallery-image">
-              <div class="image-label">Para</div>
+          <div class="service-category" data-aos="fade-up" data-aos-delay="300">
+            <h3 class="category-title">Teknologji e Avancuar</h3>
+            <p class="category-description">
+              Implante dentare, Invisalign dhe trajtim për fëmijë
+            </p>
+            <div class="category-highlight">
+              <span class="price-from">Nga 80,000 ALL</span>
+              <span class="service-count">3+ Shërbime</span>
             </div>
-            <div class="after-image">
-              <img src="images/after_whiteing.jpg" alt="Pas zbardhimit" class="gallery-image">
-              <div class="image-label">Pas</div>
-            </div>
-          </div>
-          <div class="gallery-info">
-            <h4>Zbardhim Profesional</h4>
-            <p>Rezultat i shkëlqyer pas një seance zbardhimi</p>
           </div>
         </div>
-      </div>
-      
-        <!-- Gallery Item 2 - Intensive Whitening -->
-      <div class="gallery-item" data-category="whitening">
-        <div class="gallery-card">
-          <div class="before-after-container">
-            <div class="before-image">
-              <img src="images/before_intensive_whitening.jpg" alt="Para zbardhimit intensiv" class="gallery-image">
-              <div class="image-label">Para</div>
-            </div>
-            <div class="after-image">
-              <img src="images/after_intensive_whitening.jpg" alt="Pas zbardhimit intensiv" class="gallery-image">
-              <div class="image-label">Pas</div>
-            </div>
-          </div>
-          <div class="gallery-info">
-            <h4>Zbardhim Intensiv</h4>
-            <p>Transformim i plotë me zbardhim profesional</p>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Gallery Item 3 - Implants -->
-      <div class="gallery-item" data-category="implants">
-        <div class="gallery-card">
-          <div class="before-after-container">
-            <div class="before-image">
-              <img src="images/before_implant.jpg" alt="Para implantit" class="gallery-image">
-              <div class="image-label">Para</div>
-            </div>
-            <div class="after-image">
-              <img src="images/after_implant.jpg" alt="Pas implantit" class="gallery-image">
-              <div class="image-label">Pas</div>
-            </div>
-          </div>
-          <div class="gallery-info">
-            <h4>Implant Dentar</h4>
-            <p>Zëvendësim i plotë me implant dhe kurorë</p>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Gallery Item 4 - Orthodontics -->
-      <div class="gallery-item" data-category="orthodontics">
-        <div class="gallery-card">
-          <div class="before-after-container">
-            <div class="before-image">
-              <img src="images/before_invisalign.jpg" alt="Para Invisalign" class="gallery-image">
-              <div class="image-label">Para</div>
-            </div>
-            <div class="after-image">
-              <img src="images/after_invisalign.jpg" alt="Pas Invisalign" class="gallery-image">
-              <div class="image-label">Pas</div>
-            </div>
-          </div>
-          <div class="gallery-info">
-            <h4>Invisalign</h4>
-            <p>Dhëmbë të drejtë pa aparate metalike</p>
-          </div>
-        </div>
-      </div>
-      
-        <!-- Gallery Item 5 - Veneers -->
-      <div class="gallery-item" data-category="veneers">
-        <div class="gallery-card">
-          <div class="before-after-container">
-            <div class="before-image">
-              <img src="images/before_veneers.jpg" alt="Para veneers" class="gallery-image">
-              <div class="image-label">Para</div>
-            </div>
-            <div class="after-image">
-              <img src="images/after_veneers.jpg" alt="Pas veneers" class="gallery-image">
-              <div class="image-label">Pas</div>
-            </div>
-          </div>
-          <div class="gallery-info">
-            <h4>Veneers Porcelani</h4>
-            <p>Buzëqeshje perfekte me veneers të personalizuara</p>
-          </div>
-        </div>
-      </div>
-    
-      
-      <!-- Gallery Item 6 - Smile Makeover -->
-      <div class="gallery-item" data-category="veneers">
-        <div class="gallery-card">
-          <div class="before-after-container">
-            <div class="before-image">
-              <img src="images/before_makeover.jpg" alt="Para smile makeover" class="gallery-image">
-              <div class="image-label">Para</div>
-            </div>
-            <div class="after-image">
-              <img src="images/after_makeover.jpg" alt="Pas smile makeover" class="gallery-image">
-              <div class="image-label">Pas</div>
-            </div>
-          </div>
-          <div class="gallery-info">
-            <h4>Smile Makeover</h4>
-            <p>Ndryshim i plotë me veneers dhe zbardhim</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-  <!-- Why Choose Us Section -->
-  <section class="why-choose-section" id="about">
-    <div class="container">
-      <h2 class="section-title">Pse të na zgjidhni DentaCare?</h2>
-      <p class="section-subtitle">Përkushtim ndaj cilësisë dhe mirëqenies së pacientëve tanë.</p>
-      <div class="why-choose-grid">
-        <div class="why-choose-item">
-          <div class="why-choose-icon"><i class="fas fa-user-md"></i></div>
-          <div class="why-choose-content">
-            <h3>Ekip Profesional</h3>
-            <p>Dentistë me përvojë dhe eksperiencë ndërkombëtare.</p>
+        <!-- CTA -->
+        <div class="services-cta" data-aos="fade-up" data-aos-delay="600">
+          <div class="cta-content">
+            <h3>Zbuloni të gjitha shërbimet tona</h3>
           </div>
-        </div>
-        <div class="why-choose-item">
-          <div class="why-choose-icon"><i class="fas fa-heartbeat"></i></div>
-          <div class="why-choose-content">
-            <h3>Kujdes i Personalizuar</h3>
-            <p>Trajtim i përshtatur për nevojat tuaja specifike.</p>
-          </div>
-        </div>
-        <div class="why-choose-item">
-          <div class="why-choose-icon"><i class="fas fa-laptop-medical"></i></div>
-          <div class="why-choose-content">
-            <h3>Teknologji Moderne</h3>
-            <p>Pajisje të avancuara dhe teknologji bashkëkohore.</p>
-          </div>
-        </div>
-        <div class="why-choose-item">
-          <div class="why-choose-icon"><i class="fas fa-calendar-check"></i></div>
-          <div class="why-choose-content">
-            <h3>Rezervim Online</h3>
-            <p>Sistem i thjeshtë për caktimin e orareve.</p>
+          <div class="cta-actions">
+            <a href="services.html" class="btn-explore">
+              <span>Eksploro Shërbimet</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="contact.html" class="btn-contact">
+              <i class="fas fa-phone"></i>
+              <span>Rezervo Tani</span>
+            </a>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-     <section class="testimonials-section" id="testimonials">
-        <div class="container">
-            <h2 class="section-title">Dëshmitë e Pacientëve</h2>
-            <p class="section-subtitle">Ja çfarë thonë pacientët tanë të kënaqur.</p>
-            <div class="testimonials-carousel">
-                <div class="testimonial-item active">
-                    <div class="testimonial-content">
-                        <div class="testimonial-avatar">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face&auto=format" alt="Ardit Krasniqi">
-                        </div>
-                        <p class="testimonial-text">"Shërbim i shkëlqyer, staf shumë i sjellshëm dhe profesional. Rekomandoj me zemër këtë klinikë për cilësinë dhe kujdesin që ofron."</p>
-                        <div class="testimonial-author">
-                            <strong>Ardit Krasniqi</strong>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <div class="testimonial-avatar">
-                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=150&h=150&fit=crop&crop=face&auto=format" alt="Manjola Hoxha">
-                        </div>
-                        <p class="testimonial-text">"Trajtim i shkëlqyer për implantologji. Tani kam një buzëqeshje perfekte falë ekipit profesional të DentaCare."</p>
-                        <div class="testimonial-author">
-                            <strong>Manjola Hoxha</strong>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item">
-                    <div class="testimonial-content">
-                        <div class="testimonial-avatar">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format" alt="Gentian Berisha">
-                        </div>
-                        <p class="testimonial-text">"Teknologji moderne dhe staf i kualifikuar. Më ndihmuan të kthehem në buzëqeshjen time të bukur."</p>
-                        <div class="testimonial-author">
-                            <strong>Gentian Berisha</strong>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-nav">
-                <button class="testimonial-prev carousel-btn">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="testimonial-next carousel-btn">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
-            </div>
-        </div>
     </section>
 
-      <!-- CTA Section -->
-  <section class="cta-section" id="appointment">
-    <div class="container">
-      <div class="cta-section-content">
-        <div class="cta-text">
-          <h2>Gati për një buzëqeshje të re?</h2>
-          <p>Kontaktoni sot për një konsultim falas dhe filloni rrugën drejt buzëqeshjes së përsosur.</p>
-          <a href="contact.html" class="btn-cta">Rezervo Tani</a>
-        </div>
-        <div class="cta-info">
-          <div class="info-item">
-            <i class="fas fa-phone-alt"></i>
-            <span>Tel: 0692314780</span>
+    <!-- About Section -->
+    <section class="about-preview-section" id="about-preview">
+      <div class="container">
+        <h2 class="about-preview-title">Buzëqeshja Juaj, Vizioni Ynë</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="about-preview-content">
+              <p class="about-preview-text">
+                "Çdo buzëqeshje e shëndetshme është një histori suksesi – dhe ne
+                jemi këtu për t'i dhënë jetë asaj."
+              </p>
+              <p class="about-preview-description">
+                DentaCare nuk është vetëm një klinikë – është një partner i
+                besueshëm në rrugën drejt shëndetit oral afatgjatë dhe
+                mirëqenies personale. Ne kombinojmë teknologjinë më të avancuar
+                me kujdesin human dhe profesional.
+              </p>
+
+              <div class="about-features">
+                <div class="about-feature">
+                  <div class="feature-icon">
+                    <i class="fas fa-user-md"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Kujdes i Personalizuar</h4>
+                    <p>
+                      Çdo pacient është unik – çdo trajtim fillon me dëgjim dhe
+                      kuptim
+                    </p>
+                  </div>
+                </div>
+
+                <div class="about-feature">
+                  <div class="feature-icon">
+                    <i class="fas fa-cogs"></i>
+                  </div>
+                  <div class="feature-content">
+                    <h4>Teknologji Moderne</h4>
+                    <p>
+                      Pajisjet më të avancuara për diagnostikim dhe trajtime
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-actions">
+                <a href="about.html" class="btn-about-main">Lexo Më Shumë</a>
+              </div>
+            </div>
           </div>
-          <div class="info-item">
-            <i class="fas fa-envelope"></i>
-            <span>Email: dentacare@gmail.com</span>
-          </div>
-          <div class="info-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Rruga e Durrësit, Tiranë</span>
+
+          <div class="col-lg-6">
+            <div class="about-preview-image">
+              <div class="image-wrapper">
+                <div class="image-placeholder">
+                  <img src="images/about.jpg" alt="DentaCare Team" />
+                </div>
+                <div class="floating-card">
+                  <div class="card-icon">
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <div class="card-content">
+                    <h5>100% Transparencë</h5>
+                    <p>Komunikim i qartë në çdo hap</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Before & After Gallery Section -->
+    <section class="gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Para & Pas Trajtimit</h2>
+          <p class="section-subtitle">
+            Shikoni transformimet e shkëlqyera të pacientëve tanë
+          </p>
+        </div>
 
-  <!-- Footer -->
-<div id="footer-placeholder"></div>
+        <div class="gallery-grid">
+          <!-- Gallery Item 1 - Whitening -->
+          <div class="gallery-item" data-category="whitening">
+            <div class="gallery-card">
+              <div class="before-after-container">
+                <div class="before-image">
+                  <img
+                    src="images/before_whitening.jpg"
+                    alt="Para zbardhimit"
+                    class="gallery-image"
+                  />
+                  <div class="image-label">Para</div>
+                </div>
+                <div class="after-image">
+                  <img
+                    src="images/after_whiteing.jpg"
+                    alt="Pas zbardhimit"
+                    class="gallery-image"
+                  />
+                  <div class="image-label">Pas</div>
+                </div>
+              </div>
+              <div class="gallery-info">
+                <h4>Zbardhim Profesional</h4>
+                <p>Rezultat i shkëlqyer pas një seance zbardhimi</p>
+              </div>
+            </div>
+          </div>
 
-  <script src="js/main.js"></script>
-  <script src="js/include-html.js"></script>
+          <!-- Gallery Item 2 - Intensive Whitening -->
+          <div class="gallery-item" data-category="whitening">
+            <div class="gallery-card">
+              <div class="before-after-container">
+                <div class="before-image">
+                  <img
+                    src="images/before_intensive_whitening.jpg"
+                    alt="Para zbardhimit intensiv"
+                    class="gallery-image"
+                  />
+                  <div class="image-label">Para</div>
+                </div>
+                <div class="after-image">
+                  <img
+                    src="images/after_intensive_whitening.jpg"
+                    alt="Pas zbardhimit intensiv"
+                    class="gallery-image"
+                  />
+                  <div class="image-label">Pas</div>
+                </div>
+              </div>
+              <div class="gallery-info">
+                <h4>Zbardhim Intensiv</h4>
+                <p>Transformim i plotë me zbardhim profesional</p>
+              </div>
+            </div>
+          </div>
 
-</body>
+          <!-- Gallery Item 3 - Implants -->
+          <div class="gallery-item" data-category="implants">
+            <div class="gallery-card">
+              <div class="before-after-container">
+                <div class="before-image">
+                  <img
+                    src="images/before_implant.jpg"
+                    alt="Para implantit"
+                    class="gallery-image"
+                  />
+                  <div class="image-label">Para</div>
+                </div>
+                <div class="after-image">
+                  <img
+                    src="images/after_implant.jpg"
+                    alt="Pas implantit"
+                    class="gallery-image"
+                  />
+                  <div class="image-label">Pas</div>
+                </div>
+              </div>
+              <div class="gallery-info">
+                <h4>Implant Dentar</h4>
+                <p>Zëvendësim i plotë me implant dhe kurorë</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 4 - Orthodontics -->
+          <div class="gallery-item" data-category="orthodontics">
+            <div class="gallery-card">
+              <div class="before-after-container">
+                <div class="before-image">
+                  <img
+                    src="images/before_invisalign.jpg"
+                    alt="Para Invisalign"
+                    class="gallery-image"
+                  />
+                  <div class="image-label">Para</div>
+                </div>
+                <div class="after-image">
+                  <img
+                    src="images/after_invisalign.jpg"
+                    alt="Pas Invisalign"
+                    class="gallery-image"
+                  />
+                  <div class="image-label">Pas</div>
+                </div>
+              </div>
+              <div class="gallery-info">
+                <h4>Invisalign</h4>
+                <p>Dhëmbë të drejtë pa aparate metalike</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 5 - Veneers -->
+          <div class="gallery-item" data-category="veneers">
+            <div class="gallery-card">
+              <div class="before-after-container">
+                <div class="before-image">
+                  <img
+                    src="images/before_veneers.jpg"
+                    alt="Para veneers"
+                    class="gallery-image"
+                  />
+                  <div class="image-label">Para</div>
+                </div>
+                <div class="after-image">
+                  <img
+                    src="images/after_veneers.jpg"
+                    alt="Pas veneers"
+                    class="gallery-image"
+                  />
+                  <div class="image-label">Pas</div>
+                </div>
+              </div>
+              <div class="gallery-info">
+                <h4>Veneers Porcelani</h4>
+                <p>Buzëqeshje perfekte me veneers të personalizuara</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gallery Item 6 - Smile Makeover -->
+          <div class="gallery-item" data-category="veneers">
+            <div class="gallery-card">
+              <div class="before-after-container">
+                <div class="before-image">
+                  <img
+                    src="images/before_makeover.jpg"
+                    alt="Para smile makeover"
+                    class="gallery-image"
+                  />
+                  <div class="image-label">Para</div>
+                </div>
+                <div class="after-image">
+                  <img
+                    src="images/after_makeover.jpg"
+                    alt="Pas smile makeover"
+                    class="gallery-image"
+                  />
+                  <div class="image-label">Pas</div>
+                </div>
+              </div>
+              <div class="gallery-info">
+                <h4>Smile Makeover</h4>
+                <p>Ndryshim i plotë me veneers dhe zbardhim</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section" id="about">
+      <div class="container">
+        <h2 class="section-title">Pse të na zgjidhni DentaCare?</h2>
+        <p class="section-subtitle">
+          Përkushtim ndaj cilësisë dhe mirëqenies së pacientëve tanë.
+        </p>
+        <div class="why-choose-grid">
+          <div class="why-choose-item">
+            <div class="why-choose-icon"><i class="fas fa-user-md"></i></div>
+            <div class="why-choose-content">
+              <h3>Ekip Profesional</h3>
+              <p>Dentistë me përvojë dhe eksperiencë ndërkombëtare.</p>
+            </div>
+          </div>
+          <div class="why-choose-item">
+            <div class="why-choose-icon"><i class="fas fa-heartbeat"></i></div>
+            <div class="why-choose-content">
+              <h3>Kujdes i Personalizuar</h3>
+              <p>Trajtim i përshtatur për nevojat tuaja specifike.</p>
+            </div>
+          </div>
+          <div class="why-choose-item">
+            <div class="why-choose-icon">
+              <i class="fas fa-laptop-medical"></i>
+            </div>
+            <div class="why-choose-content">
+              <h3>Teknologji Moderne</h3>
+              <p>Pajisje të avancuara dhe teknologji bashkëkohore.</p>
+            </div>
+          </div>
+          <div class="why-choose-item">
+            <div class="why-choose-icon">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <div class="why-choose-content">
+              <h3>Rezervim Online</h3>
+              <p>Sistem i thjeshtë për caktimin e orareve.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="container">
+        <h2 class="section-title">Dëshmitë e Pacientëve</h2>
+        <p class="section-subtitle">
+          Ja çfarë thonë pacientët tanë të kënaqur.
+        </p>
+        <div class="testimonials-carousel">
+          <div class="testimonial-item active">
+            <div class="testimonial-content">
+              <div class="testimonial-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face&auto=format"
+                  alt="Ardit Krasniqi"
+                />
+              </div>
+              <p class="testimonial-text">
+                "Shërbim i shkëlqyer, staf shumë i sjellshëm dhe profesional.
+                Rekomandoj me zemër këtë klinikë për cilësinë dhe kujdesin që
+                ofron."
+              </p>
+              <div class="testimonial-author">
+                <strong>Ardit Krasniqi</strong>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <div class="testimonial-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&h=150&q=80"
+                  alt="Manjola Hoxha"
+                />
+              </div>
+              <p class="testimonial-text">
+                "Trajtim i shkëlqyer për implantologji. Tani kam një buzëqeshje
+                perfekte falë ekipit profesional të DentaCare."
+              </p>
+              <div class="testimonial-author">
+                <strong>Manjola Hoxha</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-item">
+            <div class="testimonial-content">
+              <div class="testimonial-avatar">
+                <img
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face&auto=format"
+                  alt="Gentian Berisha"
+                />
+              </div>
+              <p class="testimonial-text">
+                "Teknologji moderne dhe staf i kualifikuar. Më ndihmuan të
+                kthehem në buzëqeshjen time të bukur."
+              </p>
+              <div class="testimonial-author">
+                <strong>Gentian Berisha</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-nav">
+          <button class="testimonial-prev carousel-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="testimonial-next carousel-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="appointment">
+      <div class="container">
+        <div class="cta-section-content">
+          <div class="cta-text">
+            <h2>Gati për një buzëqeshje të re?</h2>
+            <p>
+              Kontaktoni sot për një konsultim falas dhe filloni rrugën drejt
+              buzëqeshjes së përsosur.
+            </p>
+            <a href="contact.html" class="btn-cta">Rezervo Tani</a>
+          </div>
+          <div class="cta-info">
+            <div class="info-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>Tel: 0692314780</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>Email: dentacare@gmail.com</span>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Rruga e Durrësit, Tiranë</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/include-html.js"></script>
+  </body>
 </html>

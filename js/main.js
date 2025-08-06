@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     if (isMobile) {
       // Add a fallback background image for mobile
-      heroSection.style.backgroundImage = "url('images/dental-hero-fallback.jpg')";
+      heroSection.style.backgroundImage = "url('images/about.jpg')";
       heroSection.style.backgroundSize = "cover";
       heroSection.style.backgroundPosition = "center";
       
