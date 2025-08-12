@@ -1,21 +1,16 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Filter functionality
   const filterButtons = document.querySelectorAll(".filter-btn");
   const doctorCards = document.querySelectorAll(".doctor-card");
 
-  // Initialize - show all doctors
   showDoctors("all");
 
-  // Add click event listeners to filter buttons
   filterButtons.forEach((button) => {
     button.addEventListener("click", function () {
       const filter = this.dataset.filter;
 
-      // Update active button
       filterButtons.forEach((btn) => btn.classList.remove("active"));
       this.classList.add("active");
 
-      // Show/hide doctors based on filter
       showDoctors(filter);
     });
   });
@@ -24,7 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
     doctorCards.forEach((card) => {
       if (category === "all" || card.dataset.category === category) {
         card.style.display = "block";
-        // Add animation
         card.style.opacity = "0";
         card.style.transform = "translateY(20px)";
 
@@ -39,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Smooth animations for cards on scroll
   const observerOptions = {
     threshold: 0.1,
     rootMargin: "0px 0px -50px 0px",
@@ -54,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }, observerOptions);
 
-  // Observe doctor cards and certification items
   document
     .querySelectorAll(".doctor-card, .certification-item")
     .forEach((card) => {
@@ -64,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
       observer.observe(card);
     });
 
-  // Add hover effects for certification items
   const certificationItems = document.querySelectorAll(".certification-item");
   certificationItems.forEach((item) => {
     item.addEventListener("mouseenter", function () {
@@ -76,11 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Smooth scrolling for consultation button
   const consultationBtn = document.querySelector(".btn-consultation");
   if (consultationBtn) {
     consultationBtn.addEventListener("click", function (e) {
-      // Add click animation
       this.style.transform = "translateY(-3px) scale(0.98)";
       setTimeout(() => {
         this.style.transform = "translateY(-3px) scale(1)";
@@ -88,7 +77,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Count animation for certifications (optional enhancement)
   function animateCounters() {
     const certificationItems = document.querySelectorAll(".certification-item");
     certificationItems.forEach((item, index) => {
@@ -99,7 +87,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Trigger count animation when certifications section is visible
   const certificationsSection = document.querySelector(
     ".certifications-section"
   );
